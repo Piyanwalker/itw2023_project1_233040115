@@ -1,5 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Oswald:wght@200;400&family=Poppins&family=Silkscreen&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Oswald:wght@200;400&family=Poppins&family=Silkscreen&display=swap");
 
 * {
   margin: 0;
@@ -16,7 +15,7 @@
   --second-bg-color: #000000;
   --text-color: #fff;
   --main-color: rgb(0, 203, 214);
-  --three-bgcolor: rgb(46, 46, 52) ;
+  --three-bgcolor: rgb(46, 46, 52);
 }
 
 html {
@@ -94,9 +93,8 @@ section {
 .home-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
-  overflow: hidden; 
+  overflow: hidden;
 }
-
 
 .home-content h3:nth-of-type(2) {
   margin-bottom: 2rem;
@@ -129,7 +127,7 @@ span {
   align-items: center;
   width: 4rem;
   height: 4rem;
-  background: transparent; 
+  background: transparent;
   font-size: 3rem;
   color: var(--main-color);
   margin: 3rem 1.5rem 3rem 0;
@@ -214,7 +212,6 @@ span {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-
 }
 
 .skill-container .skill-box {
@@ -249,7 +246,6 @@ span {
   font-size: 1.6rem;
   margin: 1rem 0 6rem;
 }
-
 
 /* project section start */
 
@@ -411,7 +407,7 @@ span {
 
 .footer-text p {
   font-size: 16px;
-  color: #F1F6F9;
+  color: #f1f6f9;
 }
 
 /* /Breakpoints/ */
@@ -458,14 +454,36 @@ span {
   .home .home-content {
     max-width: 50rem;
   }
-  .home .portfolio-container .portfolio-box {
+
+  .home .social-media {
+    justify-content: space-evenly;
+  }
+
+  .home .home-content .home-box {
     right: -45rem;
   }
-  .home .portfolio-container .overlay {
+  .home .home-container .overlay {
     right: -39.5rem;
   }
   .home-img img {
-    display: none;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    justify-content: center;
+  }
+  .home {
+    padding: 0 3% 23rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  .home-content h3 {
+    font-size: 2.1rem;
+  }
+
+  .home-content h1 {
+    font-size: 2.1rem;
   }
   .services,
   .porfolio {
@@ -517,35 +535,7 @@ span {
   .navbar a::before {
     display: none;
   }
-  .home {
-    padding: 0 3% 23rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-  }
-  .home-img{
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    border: 1px solid var(--main-color);
-    bottom: 0;
-    z-index: 9999;
-    background-image: url(../images/4.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-  }
-  .home-content h3 {
-    font-size: 2.6rem;
-  }
-
-  .home-content h1 {
-    font-size: 5rem;
-  }
 }
-
-
 
 /* animasi */
 
