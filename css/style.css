@@ -42,7 +42,8 @@ section {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: var(--second-bg-color);
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(100px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -518,16 +519,33 @@ span {
   }
   .home {
     padding: 0 3% 23rem;
+    display: flex;
     justify-content: center;
     text-align: center;
+    position: relative;
+  }
+  .home-img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border: 1px solid var(--main-color);
+    bottom: 0;
+    z-index: 9999;
+    background-image: url(../images/4.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
   }
   .home-content h3 {
     font-size: 2.6rem;
   }
+
   .home-content h1 {
     font-size: 5rem;
   }
 }
+
+
 
 /* animasi */
 
